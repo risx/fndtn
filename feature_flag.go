@@ -26,6 +26,7 @@ func FeatureFlag(flag string) string {
 		//Later, it may be worth syncing configs in another region if failed to
 		//pick up in us-west-2
 		log.Fatal(err)
+		return "Error"
 	}
 
 	value := *param.Parameter.Value
