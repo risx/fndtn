@@ -25,7 +25,7 @@ func FeatureFlag(flag string) string {
 	if err != nil {
 		//Later, it may be worth syncing configs in another region if failed to
 		//pick up in us-west-2
-		log.Fatal(err)
+		log.Print(err)
 		return "Error"
 	}
 
